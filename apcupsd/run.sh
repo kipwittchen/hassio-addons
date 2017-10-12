@@ -7,5 +7,5 @@ sed -i "s/DEVICE \/dev\/ttyS0/DEVICE/g" /etc/apcupsd/apcupsd.conf
 echo "ISCONFIGURED=yes" >> /etc/default/apcupsd
 
 echo "$(apctest)"
-echo "$(apcupsd -b)"
+apcupsd -b
 echo "apcupsd is now running!"
